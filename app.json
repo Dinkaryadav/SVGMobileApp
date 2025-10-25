@@ -9,11 +9,9 @@
     "scheme": "svgmobileapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-
     "ios": {
       "supportsTablet": true
     },
-
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
@@ -22,14 +20,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.yadavd.SVGMobileApp"
     },
-
     "web": {
       "output": "single",
       "favicon": "./assets/images/favicon.png"
     },
-
     "plugins": [
       [
         "expo-splash-screen",
@@ -45,10 +42,14 @@
       ],
       "expo-secure-store"
     ],
-
     "experiments": {
       "router": false,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1ee94f1a-9349-4962-a8a3-96aa59247adf"
+      }
     }
   }
 }
