@@ -1,7 +1,25 @@
 {
+  // 🧠 Auto-fix and organize imports when you save
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.organizeImports": "explicit",
     "source.sortMembers": "explicit"
-  }
+  },
+
+  // 🧩 Ensure VS Code always uses the correct Node.js path
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Program Files\\nodejs;${env:PATH}"
+  },
+
+  // 🚀 Optional: smoother Expo/React Native debugging experience
+  "react-native-tools.useHermesEngine": false,
+  "react-native-tools.showInternalLogs": false,
+  "react-native-tools.debugServer": "localhost",
+  "react-native-tools.port": 8081,
+  "react-native-tools.networkInspectorEnabled": false,
+
+  // 🧹 Editor formatting preferences (optional, can remove if not needed)
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n"
 }

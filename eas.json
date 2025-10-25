@@ -12,7 +12,10 @@
     },
     "production": {
       "android": {
-        "buildType": "apk" // 👈 this is the key setting
+        "buildType": "apk"
+      },
+      "hooks": {
+        "postBuild": "node scripts/rename-apk.js"
       }
     }
   },
